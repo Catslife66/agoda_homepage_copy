@@ -1,0 +1,96 @@
+@media screen and (max-width: 1280px) {
+    .left {
+        width: 80%;
+    }
+    .toggle {
+        display: inline-block;
+        position: relative;
+    }
+    .toggle-icon {
+        display: flex;
+        font-size: 1.2rem;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        justify-content: center;       
+    }
+    .toggle-list {
+        display: none;
+    }
+    .toggle-items{
+        position: absolute;
+        right: 0px;
+        width: 200px;
+        border: 1px solid var(--lightgrey)
+    }
+    .toggle-items a {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px; 
+    }
+    .toggle-items img {
+        width: 15%;
+    }
+
+    .toggle-icon:hover {
+        background-color: var(--blue);
+        border-radius: 4px;
+        color:white;
+        cursor: pointer;
+    }
+    .toggle:hover .toggle-items{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+    .toggle-items a:hover{
+       background-color: var(--lightgrey);
+    }
+
+    /* ----search section---- */
+    #search {
+        height: 600px;
+    }
+
+    .search-wrapper, .banner-container {
+        width: 800px;
+    }
+    .form-wrapper{
+        height: 380px;
+    }
+    .grid-wrapper {
+        width: 100%;
+    }
+    .row2a {
+        grid-column: 1 / span 4;
+        margin-right: 40px;
+        margin-bottom: 10px;
+    }
+    .row2b {
+        grid-column: 1 / span 4;
+        margin-left: 40px;
+    }
+    .bundle {
+        top: 270px;
+    }
+    .add-hotel {
+        top: 260px;
+    }
+    .search-wrapper button {
+        top: 360px;
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: 980px) {
+    .unshow {
+        display: none;
+    }
+    .search-wrapper, .banner-container {
+        width: 680px;
+    }
+}

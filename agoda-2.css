@@ -1,0 +1,167 @@
+/* ----banner section---- */
+#banner-section {
+    margin: 50px 0;
+
+}
+.banner-container {
+    position: relative;
+    width: 1000px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+#banner-div {
+    display: flex;
+    height:100%;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.banner-item {
+    /* to scroll items need min and max width */
+    min-width: 46%;
+    max-width: 46%;
+    height: 100%;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: var(--showdow);
+}
+
+.banner-item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.left-arrow, .right-arrow{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: var(--showdow);
+    align-items: center;
+    justify-content: center;
+    top: 85px;
+}
+
+#left-arrow {
+    display: none;
+}
+
+#right-arrow {
+    display: flex;
+    right: 0px;
+}
+
+#banner-div::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-dot {
+    margin: 20px auto;
+    text-align: center;
+}
+
+#scroll-left {
+    display: block;
+}
+
+#scroll-right {
+    display: none;
+}
+
+
+/* ----destination small icons---- */
+#destination {
+    height: 250px;
+    margin: 10px 0;
+    display: flex;
+}
+
+.destination-wrapper{
+    width: 1000px;
+    margin: 5px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-title {
+    font-size: 0.85rem;
+}
+
+.city-wrapper{
+    width: 1000px;
+    height: 200px;
+    margin: 10px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+}
+
+.city-div {
+    min-width: 15%;
+    max-width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.city-img{
+    border-radius: 50%;
+    box-shadow: var(--showdow);
+    width: 80%;
+}
+
+.city-name {
+    font-size: 0.8rem;
+}
+
+.citi-detail{
+    font-size: 0.7rem;
+    color: var(--grey);
+}
+
+.toLeft, .toRight{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: var(--showdow);
+    align-items: center;
+    justify-content: center;
+    top: 85px;
+}
+
+.toLeft {
+    left: 0px;
+    display: none;
+}
+
+.toRight {
+    right: 0;
+}
+
+.show {
+    left: 440px;
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.city-wrapper::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
