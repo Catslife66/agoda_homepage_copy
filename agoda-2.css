@@ -186,8 +186,8 @@
 .card-wrapper {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
+    justify-content: space-between;
+    margin: 20px auto 0 auto;
 }
 
 .card-div {
@@ -203,7 +203,7 @@
 }
 
 .card-title {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     margin: 5px 0 5px 5px;
     
 }
@@ -212,4 +212,8 @@
     font-size: 0.7rem;
     color: var(--grey);
     margin: 5px 0 5px 5px;
+}
+
+.card-div:hover {
+    box-shadow: 0 0 10px var(--grey);;
 }
