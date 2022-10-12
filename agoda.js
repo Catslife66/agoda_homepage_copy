@@ -12,11 +12,14 @@ const leftBtns = document.querySelectorAll('.toLeft');
 
 // sticky nav bar
 window.addEventListener("scroll", ()=> {
+    console.log(scrollY)
     if(window.scrollY >= 720){
+        fixNav.classList.remove('hidden');
         fixNav.classList.add('sticky');
-    }else{
+    }
+    else{
         fixNav.classList.remove('sticky');
-        fixNav.classList.add('no-show');
+        fixNav.classList.add('hidden');
     }
 })
 
@@ -55,6 +58,7 @@ rightBtns.forEach(button => {
         container.scrollLeft = container.scrollWidth;
         let left = button.previousElementSibling;
         left.classList.add('show');
+        left.classList.remove('hidden');
         button.classList.add('hidden');
     })
 })
@@ -66,6 +70,8 @@ leftBtns.forEach(button => {
         container.scrollLeft = 0;
         let right = button.nextElementSibling;
         right.classList.remove('hidden');
+        button.classList.remove('show');
+        button.classList.add('hidden');
 
     })
 })

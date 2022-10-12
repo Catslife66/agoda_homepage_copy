@@ -52,9 +52,9 @@
         height: 600px;
     }
 
-    .search-wrapper, .banner-container {
-        width: 800px;
-    }
+    /* .search-wrapper, .banner-container, .search-nav {
+        width: 1000px;
+    } */
     .form-wrapper{
         height: 380px;
     }
@@ -79,10 +79,7 @@
     .search-wrapper button {
         top: 360px;
     }
-
-    
 }
-
 
 
 
@@ -90,7 +87,19 @@
     .unshow {
         display: none;
     }
-    .search-wrapper, .banner-container {
+
+    .search-nav {
+        width: 100%;
+        margin-right: 5px;
+    }
+
+  
+    .search-wrapper, .banner-container, .destination-wrapper, .city-wrapper {
         width: 680px;
+    }
+
+    .show {
+        left: 340px;
+        display: flex;
     }
 }
