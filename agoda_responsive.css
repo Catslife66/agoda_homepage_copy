@@ -92,10 +92,28 @@
         width: 100%;
         margin-right: 5px;
     }
-
   
-    .search-wrapper, .banner-container, .destination-wrapper, .city-wrapper {
+    .search-wrapper, .banner-container, .destination-wrapper, .city-wrapper, .explore-wrapper {
         width: 680px;
+    }
+
+    .city-div {
+        margin-right: 150px;
+    }
+
+    #explore {
+        height: 620px;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .card-div {
+       width: 100%;
+        
     }
 
     .show {

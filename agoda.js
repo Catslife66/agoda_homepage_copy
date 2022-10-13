@@ -1,8 +1,8 @@
 const bannerRightBtn = document.getElementById('right-arrow');
 const bannerLeftBtn = document.getElementById('left-arrow');
 const bannerContainer = document.getElementById('banner-div');
-const scrollRight = document.getElementById('scroll-right');
-const scrollLeft = document.getElementById('scroll-left');
+const scrollRight = document.querySelector('#scroll-right');
+const scrollLeft = document.querySelector('#scroll-left');
 
 const fixNav = document.querySelector('#top-nav');
 
@@ -12,7 +12,6 @@ const leftBtns = document.querySelectorAll('.toLeft');
 
 // sticky nav bar
 window.addEventListener("scroll", ()=> {
-    console.log(scrollY)
     if(window.scrollY >= 720){
         fixNav.classList.remove('hidden');
         fixNav.classList.add('sticky');
@@ -27,25 +26,25 @@ window.addEventListener("scroll", ()=> {
 //banner left and right button
 bannerLeftBtn.addEventListener("click", () => {
     scrollBanner('right')
-    bannerLeftBtn.style.display = 'none'
-    bannerRightBtn.style.display = 'flex'
 })
 
 bannerRightBtn.addEventListener("click", () => {
     scrollBanner('left')
-    bannerRightBtn.style.display = 'none'
-    bannerLeftBtn.style.display = 'flex'
 })
 
 function scrollBanner(direction) {
     if(direction == 'right') {
         bannerContainer.scrollLeft = bannerContainer.scrollWidth
-        scrollLeft.style.display = 'none'
-        scrollRight.style.display = 'block'
+        bannerLeftBtn.style.display = 'none'
+        bannerRightBtn.style.display = 'flex'
+        scrollLeft.classList.remove('hidden')
+        scrollRight.classList.add('hidden')
     }else {
         bannerContainer.scrollLeft = 0
-        scrollLeft.style.display = 'block'
-        scrollRight.style.display = 'none'
+        bannerRightBtn.style.display = 'none'
+        bannerLeftBtn.style.display = 'flex'
+        scrollLeft.classList.add('hidden')
+        scrollRight.classList.remove('hidden')
     }
 }
 
@@ -57,9 +56,8 @@ rightBtns.forEach(button => {
         let container = document.getElementById(containerId);
         container.scrollLeft = container.scrollWidth;
         let left = button.previousElementSibling;
-        left.classList.add('show');
-        left.classList.remove('hidden');
-        button.classList.add('hidden');
+        button.style.display = 'none';
+        left.style.display = 'flex';
     })
 })
 
@@ -69,9 +67,8 @@ leftBtns.forEach(button => {
         let container = document.getElementById(containerId);
         container.scrollLeft = 0;
         let right = button.nextElementSibling;
-        right.classList.remove('hidden');
-        button.classList.remove('show');
-        button.classList.add('hidden');
+        button.style.display = 'none';
+        right.style.display = 'flex';
 
     })
 })
