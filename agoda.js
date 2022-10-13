@@ -34,13 +34,13 @@ bannerRightBtn.addEventListener("click", () => {
 
 function scrollBanner(direction) {
     if(direction == 'right') {
-        bannerContainer.scrollLeft = bannerContainer.scrollWidth
+        bannerContainer.scrollLeft = 0
         bannerLeftBtn.style.display = 'none'
         bannerRightBtn.style.display = 'flex'
         scrollLeft.classList.remove('hidden')
         scrollRight.classList.add('hidden')
     }else {
-        bannerContainer.scrollLeft = 0
+        bannerContainer.scrollLeft = bannerContainer.scrollWidth     
         bannerRightBtn.style.display = 'none'
         bannerLeftBtn.style.display = 'flex'
         scrollLeft.classList.add('hidden')

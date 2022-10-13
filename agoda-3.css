@@ -1,7 +1,8 @@
+/* ----recommendation section---- */
 #recommendation {
-    height: 800px;
     display: flex;
     flex-direction: column;
+    margin: 50px auto;
 }
 
 .recom-wrapper {
@@ -13,12 +14,221 @@
 }
 
 .city-pointer {
-    width: 100%;
+    width: 600px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
 }
 
 .pointer-div {
-    width: 100px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.8rem;
 }
 
+.pointer-line {
+    height: 2px;
+    margin-top: 5px;
+    background-color: var(--lightgrey);
+}
+
+.pointer-div:hover {
+    cursor: pointer;
+}
+
+.focus .pointer-line{
+    background-color: var(--blue);
+}
+
+.recom-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.recom-div {
+    position: relative;
+    width: 100%;
+}
+
+.recom-div img {
+    width: 100%;
+}
+
+.points {
+    width: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.points i{
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+
+.points span {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: -30px;
+    left: 5px;
+    z-index: 1;
+}
+
+.property-name {
+    font-size: 0.7rem;
+    margin: 5px 0;
+
+}
+.location {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.65rem;
+    color: var(--blue);
+    margin: 5px 0;
+}
+
+.location i {
+    margin: 0 5px;
+}
+
+.tax {
+    color: var(--grey);
+    font-size: 0.7rem;
+    margin: 5px 0;
+}
+
+.price {
+    color: var(--pink);
+    font-size: 1.2rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.recom-wrapper button {
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin: 20px auto;
+}
+
+/* ----recommendation section---- */
+#recommendation-grid{
+    margin: 50px auto;
+}
+
+.recommendation-grid-wrapper {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+}
+
+.recommendatin-div {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.flex-div {
+    width: 190px;
+    height: 280px;;
+    box-shadow: var(--showdow);
+    border-radius: 4px;
+    position: relative;
+}
+
+.flex-div:hover {
+    box-shadow: 0 0 7px var(--grey);
+}
+
+.recommendatin-div img {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+.tagbubble{
+    width: 130px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 4px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.comment {
+    width: 65%;
+    margin-left: 5px;
+    text-align: end;
+}
+
+.comment h5 {
+    font-size: 0.8rem;
+    margin-top: 2px;
+    margin-bottom: -4px;
+}
+
+.comment span {
+    font-size: 0.7rem;
+}
+
+.tag {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+}
+
+.tag span{
+    position: relative;
+    top: -28px;
+    left: 4px;
+    color: white;
+    z-index: 1;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.tag i {
+    font-size: 1.7rem;
+    color: var(--blue);
+}
+
+.flex-detail {
+    margin: 10px 10px;
+}
+
+.flex-title {
+    font-size: 0.7rem;
+}
+
+.flex-subtitle {
+    font-size: 0.75rem;
+}
+
+.stars {
+    color: var(--yellow);
+}
+
+.pricetag {
+    font-size: 1rem;
+    color: var(--red);
+    text-align: end;
+    margin-top: 30px;
+}

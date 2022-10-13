@@ -1,6 +1,6 @@
 /* ----banner section---- */
 #banner-section {
-    margin: 50px 0;
+    margin: 50px auto;
 
 }
 .banner-container {
@@ -75,7 +75,7 @@
 /* ----destination small icons---- */
 #destination {
     height: 250px;
-    margin: 30px 0;
+    margin: 50px 0;
     display: flex;
 }
 
@@ -145,8 +145,7 @@
 }
 
 #explore {
-    height: 300px;
-    margin: 30px 0;
+    margin: 50px 0;
     display: flex;
 }
 
