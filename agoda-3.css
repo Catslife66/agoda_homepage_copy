@@ -54,6 +54,10 @@
     width: 100%;
 }
 
+.recom-div:hover {
+    cursor: pointer;
+}
+
 .recom-div img {
     width: 100%;
 }
@@ -104,7 +108,7 @@
 
 .price {
     color: var(--pink);
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin: 5px 0;
     font-weight: bold;
 }

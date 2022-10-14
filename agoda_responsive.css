@@ -52,32 +52,36 @@
         height: 600px;
     }
 
-    /* .search-wrapper, .banner-container, .search-nav {
-        width: 1000px;
-    } */
     .form-wrapper{
-        height: 380px;
+        height: 370px;
     }
-    .grid-wrapper {
+    
+    .search-form {
+        height: 280px; 
+    }
+
+    .row2 {
+        flex-direction: column;
+    }
+
+    .row2a{
         width: 100%;
+        margin-bottom: 15px;
     }
-    .row2a {
-        grid-column: 1 / span 4;
-        margin-right: 40px;
-        margin-bottom: 10px;
-    }
+
     .row2b {
-        grid-column: 1 / span 4;
-        margin-left: 40px;
+        width: 100%;
+        margin-bottom: 15px;
     }
+
     .bundle {
-        top: 270px;
+        top: 275px;
     }
     .add-hotel {
-        top: 260px;
+        top: 265px;
     }
-    .search-wrapper button {
-        top: 360px;
+    .searchBtn {
+        width: 50%;
     }
 }
 
@@ -93,10 +97,14 @@
         margin-right: 5px;
     }
   
-    .search-wrapper, .banner-container {
+    .search-wrapper, .form-wrapper, .banner-container {
         width: 680px;
     }
 
+    .search-form{
+        width: 600px;
+    }
+    
     .destination-wrapper, .city-wrapper, .explore-wrapper, .recom-wrapper, .recommendation-grid-wrapper {
         width: 800px;
     }

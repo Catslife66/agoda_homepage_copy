@@ -304,7 +304,171 @@ nav a{
 }
 
 /* form-wrapper */
+
 .form-wrapper {
+    width: 1000px; 
+    height: 270px;
+    background-color: var(--bg);
+    box-shadow: var(--showdow);
+    border-radius: 16px;
+    position: absolute;
+    top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form {
+    width: 920px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.row1 {
+    height: 58px;
+    border: 1px solid var(--lightgrey);
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.row1 input{
+    width: 90%;
+    border: none;
+}
+
+.row1 input:focus {
+    outline: none;
+}
+
+.row2 {
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    
+}
+
+.row2a {
+    width: 455px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid var(--lightgrey);
+    border-radius: 4px;
+    background-color: white;
+}
+
+.row2a-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.border-line {
+    height: 40px;
+    width: 1px;
+    background-color: var(--lightgrey);
+}
+
+.row2b {
+    width: 455px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    border: 1px solid var(--lightgrey);
+    background-color: white;
+}
+
+.grid-icon {
+    font-size: 1.4rem;
+    color: var(--lightgrey);
+    margin: 15px;
+}
+
+.twolines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.twolines p:nth-child(1) {
+    font-size: 0.9rem;
+}
+
+.twolines p:nth-child(2) {
+    font-size: 0.8rem;
+    color: var(--grey);
+}
+
+.bundle {
+    background-color: red;
+    width: 80px;
+    height: 20px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 190px;
+    left: 40px;
+    border-radius: 2px;
+}
+
+.add-hotel {
+    width: 160px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--lightgrey);
+    border-radius: 4px;
+    position: absolute;
+    left: 130px;
+    top: 180px;
+}
+
+.add-hotel div {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.add-hotel div p {
+    margin-right: 3px;
+}
+
+.searchBtn {
+    width: 45%;
+    height: 60px;
+    margin: 0 auto;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 6px;
+    box-shadow: var(--showdow);
+    color: white;
+    font-size: 1.2rem;
+    position: relative;
+    top: 30px;
+   
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+}
+
+/* .form-wrapper {
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -443,6 +607,10 @@ nav a{
     position: relative;
     top: 275px;
 }
+
+.search-wrapper button:hover {
+    cursor: pointer;
+}  */
 
 /* ----fixed search navbar---- */
 #top-nav {
