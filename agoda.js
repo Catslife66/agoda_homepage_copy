@@ -69,6 +69,5 @@ leftBtns.forEach(button => {
         let right = button.nextElementSibling;
         button.style.display = 'none';
         right.style.display = 'flex';
-
     })
 })

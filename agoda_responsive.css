@@ -97,7 +97,7 @@
         margin-right: 5px;
     }
   
-    .search-wrapper, .form-wrapper, .banner-container {
+    .search-wrapper, .form-wrapper, .banner-container, .section-wrapper {
         width: 680px;
     }
 
@@ -105,7 +105,7 @@
         width: 600px;
     }
     
-    .destination-wrapper, .city-wrapper, .explore-wrapper, .recom-wrapper, .recommendation-grid-wrapper {
+    .destination-wrapper, .city-wrapper, .explore-wrapper, .recom-wrapper, .recommendation-grid-wrapper, .help-wrapper, .footer2-wrapper, .footer-wrapper {
         width: 800px;
     }
 

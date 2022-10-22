@@ -123,6 +123,12 @@
     font-size: 0.8rem;
     font-weight: bold;
     margin: 20px auto;
+    transition: background-color .5s ease;
+}
+
+.recom-wrapper button:hover {
+    background-color: var(--ease);
+    cursor: pointer;
 }
 
 /* ----recommendation section---- */
